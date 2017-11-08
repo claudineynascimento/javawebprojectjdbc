@@ -1,0 +1,13 @@
+1) Escolher um diretório qualquer para ser raiz do servidor;
+
+2) Criar três sub-pastas:
+bin
+data
+lib
+
+3) Na pasta "lib", incluir o jar "hsqldb-2.2.7.jar"
+
+4) Na pasta "bin", criar um arquivo "startup.cmd" (Windows) ou "startup.sh" (Linux) e incluir o seguinte comando:
+java -cp ../lib/hsqldb-2.2.7.jar org.hsqldb.server.Server --database.0 file:../data/dbCurso --dbname.0 dbCurso
+
+5) Executar o arquivo "startup"
